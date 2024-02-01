@@ -32,14 +32,14 @@ public class PostServiceImpl implements PostService { // here we call the PostSe
         Post savedPost= postRepository.save(post);  // To save Data using  postRepository
 
 
-        PostDto dto = new PostDto(); // Return PostDto
-        dto.setTitle(savedPost.getTitle());
-        dto.setDescription(savedPost.getDescription());
-        dto.setContent(savedPost.getContent());
+//        PostDto dto = new PostDto(); // Return PostDto
+//        dto.setTitle(savedPost.getTitle());
+//        dto.setDescription(savedPost.getDescription());
+//        dto.setContent(savedPost.getContent());
 
-        PostDto dto1 =mapToDto(savedPost);
+        PostDto dto =mapToDto(savedPost);
 
-        return dto1;
+        return dto;
     }
 
 
